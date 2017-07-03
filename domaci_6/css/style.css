@@ -1,0 +1,286 @@
+
+
+/*	01. Glavno
+	02. Header
+	03. Pages
+		03.01 Portfolio
+		03.02 O meni
+		03.03 Kontakt
+	04. Footer
+*/
+*	{
+	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3	{
+	font-family: 'Raleway', sans-serif;	
+}
+
+img	{
+	max-width: 100%; 
+	height: auto;
+	
+}
+
+p	{
+	color: black;
+}
+
+a 	{
+	color: blue; 
+	text-decoration: none;
+}
+
+a:hover	{
+	opacity: 0.8;
+	text-decoration: underline; 	
+}
+
+.container	{
+	max-width: 1300px;
+	margin: o auto;
+}
+
+
+
+/*02. Header*/
+
+header	{
+	background-color: rgb(59, 51, 68);
+	color: black;
+	padding: 20px 0 0;
+	text-align: center;
+}
+
+nav ul	{
+	list-style: none;
+	padding: 30px 0;
+	
+}
+
+nav ul li	{
+	display: inline;
+}
+
+nav ul li:nth-child(2)	{
+	margin: 0 15px;
+}
+
+nav ul li a	{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+
+.selected	{
+
+	text-decoration: underline;
+
+}
+
+/*03. Pages*/
+
+.main-content	{
+	padding: 50px 10px;
+	
+}
+
+/*03.01 Portfolio*/	
+
+.rani_radovi	{
+	width: 100%;
+	max-width: 600px;
+	margin: 70px auto;
+	background-color: whitesmoke;
+	border: 5px solid rgb(60, 42, 104);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.rani_radovi img {
+	border-bottom: 1px solid black;
+}																				
+
+.rani_radovi section	{
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.rani_radovi section h1	{
+	font-size: 18px;
+	padding: 0;
+	
+	
+}
+
+.rani_radovi section h1 a	{
+	color: rgb(19, 4, 35);
+}
+
+.rani_radovi section p	{
+	font-size: 14px;
+	color: black;
+}
+
+/*03.02 O meni - druga strana*/
+
+.o_meni	{
+	width: 100%;
+	max-width: 500px;
+	margin: 50px auto 30px;
+	border: 5px solid rgb(60, 42, 104);
+	border-radius: 5px;
+
+}
+ .o_meni p	{
+ 	font-size: 18px;
+ 	padding: 5px 20px;
+ }
+
+.o_meni h2, .o_meni p	{
+	text-align: center;
+}
+
+
+.profile-photo	{
+	display: block;
+	max-width: 200px;
+	margin: 20px auto 50px;
+	border-radius: 50%;
+}
+
+/*03.03 Kontakt*/
+
+.kontakt	{
+	display: inline-block;
+
+	margin: 75px 10% 150px;
+}
+
+.kontakt ul	{
+	list-style-type: none;
+	padding: 0;
+}
+
+.kontakt ul li	{
+	margin-bottom: 10px;
+}
+
+.kontakt ul li span	{
+	margin-right: 10px;
+}
+
+
+/*04. Footer*/
+
+footer	{
+	text-align: center;
+	background-color: rgb(103, 97, 119);
+	
+}
+
+footer a:hover	{
+	text-decoration: none;
+}
+
+footer a span	{
+	color: rgb(37, 21, 53);
+	
+}
+
+footer p 	{
+	margin-bottom: 0;
+	margin-top: 5px;
+	padding-bottom: 10px;
+	color: black;
+	font-weight: bold;
+}
+
+
+
+.facebook	{
+	font-size: 40px;
+	
+	
+}
+
+.linkedin	{
+	font-size: 40px;
+	margin: 0 5px;
+	
+}
+
+.twitter	{
+	font-size: 40px;
+	
+}
+
+/*05. Media queryss*/
+
+@media  screen and (min-width: 960px){
+	header	{
+		
+		padding: 0 20px 20px;
+		padding-right: 20px;
+		border-bottom: 3px solid rgb(32, 26, 38);
+	}
+
+	header h1, header h2	{
+		display: inline-block;
+	}
+
+	nav	{
+		float: right;
+	}
+
+	nav ul	{
+		background-color: transparent;
+		margin-top: 10px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.clearfix	{
+		clear: both;
+	}
+
+	
+
+	/* Projekat*/
+
+	.container	{
+		display: inline-block;
+	}										
+
+	.rani_radovi	{
+		width: 32%;
+		display: inline-block;
+		margin: o auto;
+	}
+
+	.rani_radovi:nth-child(3n+2)	{
+		margin-left: 1.7%;
+		margin-right: 1.7%;
+	}
+
+	.rani_radovi section h1	{
+		font-size: 25px;
+	}
+
+	.rani_radovi section p	{
+		font-size: 16px;
+	}
+
+}
+
+@media  screen and (min-width: 1000px)	{
+
+	.rani-radovi:nth-child(2n+2)	{
+		/*mislim da je 2n+2*/
+		margin-left: 1.6%;
+		margin-right: 1.6%;
+	}
+}
